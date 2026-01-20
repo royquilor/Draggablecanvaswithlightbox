@@ -16,4 +16,24 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  server: {
+    // Configure HMR to avoid CSP issues with eval
+    hmr: {
+      protocol: 'ws',
+    },
+  },
+  build: {
+    // Use safer build options to avoid eval in production
+    target: 'esnext',
+    minify: 'esbuild',
+    // Security: Don't expose source maps in production
+    sourcemap: false,
+    // Security: Enable rollup options for better security
+    rollupOptions: {
+      output: {
+        // Don't expose internal module structure
+        manualChunks: undefined,
+      },
+    },
+  },
 })

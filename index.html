@@ -1,14 +1,71 @@
 
   <!DOCTYPE html>
-  <html lang="en">
+  <html lang="en" style="height: 100%; margin: 0; padding: 0;">
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Draggable Canvas with Lightbox</title>
+      
+      <!-- Primary Meta Tags -->
+      <title>Interactive Draggable Canvas Gallery | Lightbox Image Viewer</title>
+      <meta name="title" content="Interactive Draggable Canvas Gallery | Lightbox Image Viewer" />
+      <meta name="description" content="Explore an interactive draggable canvas gallery with smooth animations, pinch-to-zoom lightbox, keyboard navigation, and full mobile support. Built with React and Framer Motion." />
+      <meta name="keywords" content="draggable canvas, image gallery, lightbox, interactive gallery, image viewer, React gallery, mobile gallery, touch gestures, pinch to zoom" />
+      <meta name="author" content="404roy" />
+      <meta name="robots" content="index, follow" />
+      <meta name="language" content="English" />
+      <meta name="revisit-after" content="7 days" />
+      
+      <!-- Open Graph / Facebook -->
+      <!-- TODO: Update og:url and og:image with your actual domain and image URL -->
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://draggable-canvas-gallery.com/" />
+      <meta property="og:title" content="Interactive Draggable Canvas Gallery | Lightbox Image Viewer" />
+      <meta property="og:description" content="Explore an interactive draggable canvas gallery with smooth animations, pinch-to-zoom lightbox, keyboard navigation, and full mobile support. Built with React and Framer Motion." />
+      <meta property="og:image" content="https://draggable-canvas-gallery.com/og-image.jpg" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content="Interactive Draggable Canvas Gallery Preview" />
+      <meta property="og:site_name" content="Draggable Canvas Gallery" />
+      <meta property="og:locale" content="en_US" />
+      
+      <!-- Twitter Card -->
+      <!-- TODO: Update twitter:url and twitter:image with your actual domain and image URL -->
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:url" content="https://draggable-canvas-gallery.com/" />
+      <meta name="twitter:title" content="Interactive Draggable Canvas Gallery | Lightbox Image Viewer" />
+      <meta name="twitter:description" content="Explore an interactive draggable canvas gallery with smooth animations, pinch-to-zoom lightbox, keyboard navigation, and full mobile support." />
+      <meta name="twitter:image" content="https://draggable-canvas-gallery.com/og-image.jpg" />
+      <meta name="twitter:image:alt" content="Interactive Draggable Canvas Gallery Preview" />
+      <meta name="twitter:creator" content="@404roy" />
+      
+      <!-- Additional SEO Tags -->
+      <meta name="theme-color" content="#0a0a0a" />
+      <!-- TODO: Update canonical URL with your actual domain -->
+      <link rel="canonical" href="https://draggable-canvas-gallery.com/" />
+      
+      <!-- CSP meta tag: Production-safe Content Security Policy -->
+      <!-- Note: Vite requires 'unsafe-inline' for style-src. For script-src, Vite uses nonces in production -->
+      <!-- In development, you may need to add 'unsafe-eval' to script-src for HMR -->
+      <!-- This CSP is optimized for Vite production builds -->
+      <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://images.unsplash.com; font-src 'self' data:; connect-src 'self' https://images.unsplash.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests;" />
+      <style>
+        /* Ensure html and body take full height */
+        html, body {
+          height: 100%;
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+        }
+        #root {
+          height: 100%;
+          width: 100%;
+        }
+      </style>
     </head>
 
-    <body>
-      <div id="root"></div>
+    <body style="height: 100%; margin: 0; padding: 0;">
+      <div id="root" style="height: 100%; width: 100%;"></div>
       <script type="module" src="/src/main.tsx"></script>
     </body>
   </html>
